@@ -2440,7 +2440,11 @@ ul.list-content li p.text {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    content: url(../images/preload.png);
+    /*content: url(../images/preload.png);*/
+    content: url(../images/logo/logo_gold_updated.png);
+    width: 18%; /* das hab ich hinzugefügt */
+    height: 2%; /* das hab ich hinzugefügt */
+    
     animation: preload 1.2s linear infinite alternate;
 }
 
