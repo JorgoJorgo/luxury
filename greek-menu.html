@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="el" lang="el"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="el" lang="el">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>MYTHOS Μενού</title>
+
+    <meta name="author" content="themesflat.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+    <link rel="shortcut icon" href="assets/images/mythos_favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/mythos_favicon.png">
+</head>
+
+<body class="body">
+
+    <div class="preload preload-container">
+        <div class="middle"></div>
+    </div>
+
+    <div id="wrapper">
+        <div id="page" class="">
+
+            <header id="header_main" class="header header-fixed header-2">
+                <div class="header-top">
+                    <div class="left">
+                        <ul>
+                            <li><p>Markt 3, 46399 Bocholt</p></li>
+                            <li><p> +49 2871 2920210</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="header-inner">
+                    <div class="header-inner-wrap">
+                        <div class="header-left">
+                            <div id="site-logo">
+                                <a href="index.html" rel="home" class="main-logo">
+                                    <img id="logo_header" alt="" src="assets/images/logo/logo_gold_updated.png"
+                                        data-retina="assets/images/logo/logo-1@2x.png" style="height: 50px;">
+                                </a>
+                            </div>
+                        </div>
+
+                        <nav class="main-nav">
+                            <ul class="menu-primary-menu">
+                                <li class="menu-item"><a href="index.html">Αρχική</a></li>
+                                <li class="menu-item current-menu-item"><a href="greek-menu.html">Μενού</a></li>
+                                <li class="menu-item"><a href="languages.html">International</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="wg-information">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
+                                    <image id="_" data-name="" width="17" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAeCAYAAABJ/8wUAAAEFklEQVRYhbWXW2+UVRSGn6nTOqXnQk/WUFEpghIrFYmNh6gx3viv/DHeGK+81HiIEEXRKIkoRqFNtXUsWhjAocxYs+qzze7XmXYa05Xs5Jt9WOtdh3ftPaUL77zFHtIFlB3dQC8w4KgAJY9vAnWg5vgLuA80HH/vZqa8FwqgDxgGhoB+vwf3AHILWAduAzf9rv0fIEeAJ4CTwGPAw8CE4LpbnG8YhTvAb8Ay8BNwBfgeWNsPkPB8HJgEHgGecpwAjgqgEwlAS8APwOPAMeA6sApUjVRbIBHueeA54LSGA9BhYKRDAEm6jeIoMAssCOwycBH4Ik9XAOkx1xHySMHLwDngVGa8oRd/mvcNPa6bBkxXRQA91tOIQEaMSpyfAcZcv2IK62UnIvevAS8ZiQnnsQgXgW/M8wpwV1bUshAPGdFg1SFgyvp6GnjUoh7x96RznwAfRC2VZUAAeQF41d9kkQgQF4D3ge+MQDkrytvu7c+KuOH3qSxiM57rd4xJ6aihW2XDGd48VACBNIwofA58JQ3H9LY7YwkZi+4btVVTN5ClZzTTPajNsF0p27B6WoBAw98CV/UwmHPcIq64J+8jaDyK8kfpG2enbQGjBf2D2u4KIPc8HAVYlCULKrx8EXjFNA7ofakAZNMo1QTxIfClOpasi1w2tH2vnB06bxF2mbsN56oWV7Dp9X30kZPqWVbHeed7Mhtfu14rW/URxreBj9y44ajJgCdNSacgcO9xz34mOy6qP9lY0fbNlJqq7TdtSqmKSn/TBjeWGanL/zVpjLQ9IvVT/Yx5Ngr3PRmY+lZydusyzDtrTNQ1kiSKa84xlNVCKPzY/Fedj2vhWVM4a+0MeXbJFrCYAdgm7S69B/TmjA1u3PlQcMPmFn3l0wKQ9ex2Pqz34+o4Yyp+B5pFg11tgATnzwLPS9Ukd6XjJe+MFZU2/b7s2lX3JjmqrrPt7qxWQEo2mgVDPZyt1a3ya1kkcqm6tlxI8bC6FtRdKh5sBWTExjXvRdXbJmr7kV51zat7R1SKQCoemPMK72uxPu3bYpydMu7adMacJH3qnNPGtvVisU5It3M2saIckhEpBTcsPizu03o9696iTKp7RfovtgIS3+HJM4av6BGyYEqv1t1zzbVj3uBz7tlRB+4/4Z5L1lKzCCQ2TalwchdGlWTBG743Vp2ftAFOtAGBOtNbZEqbd4pAoiUP2IT2elRXNDpTeKF1IuXsSdDXCkjyop037aRTALlEw3zQVG9JHv646jdadb0DkKZdutEKSLpt1w4YTDO7ZNMzc1tqIiK/eH80zGFa39ypb1+S0h16//BZcD2/Boq378/Au24MIOkv5a7/WzuQiHz6SxpAfnX8p7fIjghVII2wbT1qDwBIPMTSf6N/BfgHi1YQplUrVPoAAAAASUVORK5CYII="/>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <p class="tf-color">Καλέστε μας</p>
+                                <p class="number-phone">+49 2871 2920210</p>
+                            </div>
+                        </div>
+
+                        <div class="header-right">
+                            <div class="canvas">
+                                <div class="canvas-button"><span></span></div>
+                                <div class="wg-welcom">
+                                    <div class="inner">
+                                        <div class="button-close"><i class="icon-close"></i></div>
+                                        <img src="assets/images/logo/logo_gold_updated.png" alt="">
+                                        <div class="text">Ένα εστιατόριο που εδώ και 20 χρόνια διευθύνεται από οικογένεια και φίλους</div>
+                                        <div class="number-phone">+49 2871 2920210</div>
+                                        <div class="text line-under">Markt 3, 46399 Bocholt</div>
+                                        <div class="number-phone">Ώρες λειτουργίας</div>
+                                        <div class="text line-under">
+                                            Δευτέρα : Κλειστά <br>
+                                            Τρ - Πεμ : 12:00 - 14:30 & 17:00 - 22:00<br>
+                                            Παρ - Σαβ : 12:00 - 14:30 & 17:00 - 23:00<br>
+                                            Κυρ : 12:00 - 14:30 & 17:00 - 21:00
+                                        </div>
+                                        <div class="number-phone">Ζεστή κουζίνα</div>
+                                        <div class="text line-under">
+                                            Δευτέρα : Κλειστά <br>
+                                            Τρ - Πεμ : 12:00 - 14:00 & 17:00 - 21:00<br>
+                                            Παρ - Σαβ : 12:00 - 14:00 & 17:00 - 21:30<br>
+                                            Κυρ : 12:00 - 14:00 & 17:00 - 21:00
+                                        </div>
+                                        <div class="widget-social justify-center">
+                                            <ul class="">
+                                                <li><a href="https://de-de.facebook.com/pages/category/Greek-Restaurant/Mythos-Bocholt-1670736756489393/" class="icon-fb"></a></li>
+                                                <li><a href="https://www.tripadvisor.de/Restaurant_Review-g612421-d1041008-Reviews-Restaurant_Mythos-Bocholt_North_Rhine_Westphalia.html" class="icon-trip"></a></li>
+                                                <li><a href="https://www.instagram.com/mythos_bocholt/?hl=de" class="icon-instagram2"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mobile-button ">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-wrap">
+                    <div class="overlay-mobile-nav"></div>
+                    <div class="inner-mobile-nav">
+                        <div class="relative">
+                            <a href="index.html" rel="home" class="main-logo">
+                                <img id="mobile-logo_header" alt="" src="assets/images/logo/logo_gold_updated.png" style="height: 25px; width: 120px;">
+                            </a>
+                            <div class="mobile-nav-close">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="white" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 122.878 122.88" enable-background="new 0 0 122.878 122.88" xml:space="preserve"><g><path d="M1.426,8.313c-1.901-1.901-1.901-4.984,0-6.886c1.901-1.902,4.984-1.902,6.886,0l53.127,53.127l53.127-53.127 c1.901-1.902,4.984-1.902,6.887,0c1.901,1.901,1.901,4.985,0,6.886L68.324,61.439l53.128,53.128c1.901,1.901,1.901,4.984,0,6.886 c-1.902,1.902-4.985,1.902-6.887,0L61.438,68.326L8.312,121.453c-1.901,1.902-4.984,1.902-6.886,0 c-1.901-1.901-1.901-4.984,0-6.886l53.127-53.128L1.426,8.313L1.426,8.313z"/></g></svg>
+                            </div>
+                        </div>
+                        <nav id="mobile-main-nav" class="mobile-main-nav">
+                            <ul id="menu-mobile-menu" class="menu">
+                                <li class="menu-item"><a href="index.html">Αρχική</a></li>
+                                <li class="menu-item current-menu-item"><a href="greek-menu.html">Μενού</a></li>
+                                <li class="menu-item"><a href="languages.html">International</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <div class="banner-page inner-page menu-page">
+                <div class="content">
+                    <div class="banner-text">Το Μενού μας</div>
+                    <p>Ανακαλύψτε το πλούσιο μενού μας με παραδοσιακές ελληνικές σπεσιαλιτέ και σύγχρονες δημιουργίες.</p>
+                </div>
+            </div>
+
+            <div class="page-menu3-wrap style-1">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="menu-wrap left image-before">
+                                <div class="heading-section text-center">
+                                    <div class="main wow fadeInUp">Ημερήσιο Μενού</div>
+                                    <div class="divider wow fadeInUp"><div></div></div>
+                                </div>
+
+                                <div class="wg-menu-item">
+                                    <div class="flex items-center">
+                                        <div class="name"><a href="#">Παναρισμένο κατσικίσιο τυρί - 10,90€</a></div>
+                                    </div>
+                                    <p>με τρούφα & δαμάσκηνα</p>
+                                </div>
+
+                                <div class="wg-menu-item">
+                                    <div class="flex items-center">
+                                        <div class="name"><a href="#">Γεμιστά μανιτάρια - 10,50€</a></div>
+                                    </div>
+                                    <p>με λαχανικά, μπέικον & ψημένο τυρί</p>
+                                </div>
+
+                                <div class="wg-menu-item">
+                                    <div class="flex items-center">
+                                        <div class="name"><a href="#">Συκωτάκια κοτόπουλου πάνω σε σαλάτα πεδίου - 9,50€</a></div>
+                                    </div>
+                                    <p>με αγγούρι & ντοματίνια</p>
+                                </div>
+
+                                <div class="wg-menu-item">
+                                    <div class="flex items-center">
+                                        <div class="name"><a href="#">Ριζότο - 23,50€</a></div>
+                                    </div>
+                                    <p>με μύδια, γαρίδες, baby calamari & σάλτσα ντομάτας</p>
+                                </div>
+
+                                <div class="wg-menu-item">
+                                    <div class="flex items-center">
+                                        <div class="name"><a href="#">Φιλέτο κουτσομούρας - 27,90€</a></div>
+                                    </div>
+                                    <p>με σάλτσα μελιού-μουστάρδας</p>
+                                </div>
+
+                                <div class="wg-menu-item">
+                                    <div class="flex items-center">
+                                        <div class="name"><a href="#">Σουβλάκι από χοιρινή μπριζόλα - 23,90€</a></div>
+                                    </div>
+                                    <p>γεμιστό με φέτα, ντομάτα, σκόρδο & μουστάρδα</p>
+                                </div>
+
+                                <div class="wg-menu-item mb-0">
+                                    <div class="flex items-center">
+                                        <div class="name"><a href="#">Rib Eye Steak από αργεντίνικο μοσχάρι ελευθέρας βοσκής - 29,00€</a></div>
+                                    </div>
+                                    <p>με τηγανητά μανιτάρια</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="menu-wrap right">
+                                <div class="heading-section text-center">
+                                    <div class="main wow fadeInUp">Μεσημεριανό Μενού</div>
+                                    <div class="divider wow fadeInUp"><div></div></div>
+                                </div>
+
+                                <div class="wg-menu-item">
+                                    <div class="flex items-center">
+                                        <div class="name"><a href="#">δεν διατίθεται Κυριακές και αργίες</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="wg-menu-item">
+                                    <div class="flex items-center">
+                                        <div class="name"><a href="#">Γύρος - 15,90€</a></div>
+                                    </div>
+                                    <p>a) με πατάτες, ρύζι & σαλάτα<br></p>
+                                    <p>b) με σάλτσα κρέμας, τυρί στο φούρνο, πατάτες, ρύζι & σαλάτα<br></p>
+                                    <p>c) με πικάντικη σάλτσα φέτας, πατάτες, ρύζι & σαλάτα<br></p>
+                                    <p>d) τηγανάκι με σάλτσα κρέμας, πατάτες, ρύζι & σαλάτα</p>
+                                </div>
+
+                                <div class="wg-menu-item">
+                                    <div class="flex items-center">
+                                        <div class="name"><a href="#">Ανάμεικτη σαλάτα - 16,00€</a></div>
+                                    </div>
+                                    <p>με λωρίδες σολομού, ντομάτες, αγγούρι & καλαμπόκι</p>
+                                </div>
+
+                                <div class="wg-menu-item">
+                                    <div class="flex items-center">
+                                        <div class="name"><a href="#">Χοιρινό σνίτσελ - 15,90€</a></div>
+                                    </div>
+                                    <p>σε σάλτσα μανιταριών με πατάτες & σαλάτα</p>
+                                </div>
+
+                                <div class="wg-menu-item">
+                                    <div class="flex items-center">
+                                        <div class="name"><a href="#">Μπιφτέκι - 15,90€</a></div>
+                                    </div>
+                                    <p>γεμιστό με φέτα, σάλτσα Metaxa, πατάτες & σαλάτα</p>
+                                </div>
+
+                                <div class="wg-menu-item">
+                                    <div class="flex items-center">
+                                        <div class="name"><a href="#">Πέννες - 15,50€</a></div>
+                                    </div>
+                                    <p>με φιλετάκια στήθους κοτόπουλου, μανιτάρια, πιπεριά, σάλτσα ντομάτας & τριμμένη φέτα</p>
+                                </div>
+
+                                <div class="wg-menu-item">
+                                    <div class="flex items-center">
+                                        <div class="name"><a href="#">Φιλέτο στήθος κοτόπουλου - 16,50€</a></div>
+                                    </div>
+                                    <p>με σάλτσα teriyaki, πατάτες, ρύζι & σαλάτα</p>
+                                </div>
+
+                                <div class="wg-menu-item mb-0">
+                                    <div class="flex items-center">
+                                        <div class="name"><a href="#">Φιλέτο βιχτώριας πέρκας - 17,50€</a></div>
+                                    </div>
+                                    <p>με σάλτσα πορτοκαλιού, θυμάρι, πατάτες, λαχανικά & σαλάτα</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-menu3-wrap style-1">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="menu-wrap left image-before">
+                                <div class="heading-section text-center">
+                                    <div class="main wow fadeInUp">Κρύα Ορεκτικά</div>
+                                    <div class="divider wow fadeInUp"><div></div></div>
+                                </div>
+
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">1. Μεζές για 2 άτομα - 18,50€</a></div></div><p>Μια επιλογή από ελληνικά ορεκτικά</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">2. Μικρός μεζές - 10,90€</a></div></div><p>Μια επιλογή από ελληνικά ορεκτικά</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">3. Τζατζίκι - 6,50€</a></div></div><p>Πικάντικη κρέμα γιαουρτιού με αγγούρι, σκόρδο και φρέσκα μυρωδικά</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">4. Ταραμάς - 7,80€</a></div></div><p>Κρέμα από αυγοτάραχο, με λάδι και λεμόνι</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">5. Κτυπητή - 7,80€</a></div></div><p>Μους φέτας</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">6. Μελιτζανοσαλάτα - 7,80€</a></div></div><p>Κρέμα μελιτζάνας</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">7. Καρπάτσιο μοσχαρίσιου φιλέτου - 14,50€</a></div></div><p>Με ελαιόλαδο</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">8. Φέτα - 10,30€</a></div></div><p>Με κρεμμύδια και ελαιόλαδο</p></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="menu-wrap right">
+                                <div class="heading-section text-center">
+                                    <div class="main wow fadeInUp">Ζεστά Ορεκτικά</div>
+                                    <div class="divider wow fadeInUp"><div></div></div>
+                                </div>
+
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">9. Μικρές σαρδέλες - 10,50€</a></div></div><p>τηγανητές</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">10. Σκορδόψωμο - 8,90€</a></div></div><p>με μοτσαρέλα στο φούρνο</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">11. Χταπόδι - 16,50€</a></div></div><p>με σκόρδο και βούτυρο μυρωδικών στο τηγάνι</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">12. Φέτα στο τηγανάκι - 11,50€</a></div></div><p>με ελαιόλαδο, κρεμμύδι, πιπεριά – ελαφρώς καυτερό</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">13. Ψητές πιπεριές πεπερόνι - 9,50€</a></div></div><p>σε λάδι σκόρδου</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">16. Ορεκτικά - 18,90€</a></div></div><p>διάφορα ελληνικά ορεκτικά & antipasti</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">17. Ορεκτικά (μικρά) - 11,20€</a></div></div><p>διάφορα ελληνικά ορεκτικά & antipasti</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">18. Μελιτζάνες με μανούρι - 11,20€</a></div></div><p>με βασιλικό, ψημένες με τυρί</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">21. Σαγανάκι - 10,30€</a></div></div><p>τηγανητό τυρί</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">22. Γαρίδες - 16,90€</a></div></div><p>τηγανισμένες σε λάδι σκόρδου και φρέσκα μυρωδικά</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">23. Baby καλαμάρι - 15,20€</a></div></div><p>πάνω σε πράσινη σαλάτα</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">24. Ντολμαδάκια - 12,50€</a></div></div><p>γεμιστά με ρύζι και κιμά, με σάλτσα λεμονιού</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">25. Χταπόδι ψητό - 16,40€</a></div></div><p>με κρέμα φάβας</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">26. Φλωρίνης - 9,90€</a></div></div><p>ψητές κόκκινες πιπεριές γεμιστές με φέτα</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">27. Τηγανητά - 9,50€</a></div></div><p>τηγανητές μελιτζάνες και κολοκύθια με τζατζίκι</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">28. Baby καλαμάρι - 16,70€</a></div></div><p>με σάλτσα λεμόνι-κρέμα</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">29. Σκορδόψωμο - 7,20€</a></div></div><p></p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">30. Ειδική πιατέλα ορεκτικών - 38,00€</a></div></div><p>κρύα και ζεστά ορεκτικά (από 3 άτομα), κάθε επιπλέον άτομο – 11,00€</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-menu3-wrap style-1">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="menu-wrap left image-before">
+                                <div class="heading-section text-center">
+                                    <div class="main wow fadeInUp">Από τη Θάλασσα</div>
+                                    <div class="divider wow fadeInUp"><div></div></div>
+                                </div>
+
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">45. Καλαμάρια (ροδέλες) - 21,50€</a></div></div><p>με συνοδευτικά και σαλάτα</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">46. Γαρίδες σχάρας - 28,90€</a></div></div><p>με συνοδευτικά και σαλάτα</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">48. Φιλέτο σολομού - 27,90€</a></div></div><p>με εκλεκτή σάλτσα γαρίδας, συνοδευτικά και σαλάτα</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">49. Πιατέλα ψαριών "Aegais" - 29,90€</a></div></div><p>διάφορα μεσογειακά ψάρια, με συνοδευτικά και σαλάτα</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">50. Τσιπούρα σχάρας - 23,90€</a></div></div><p>με συνοδευτικά και σαλάτα</p></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="menu-wrap right">
+                                <div class="heading-section text-center">
+                                    <div class="main wow fadeInUp">Σπεσιαλιτέ</div>
+                                    <div class="divider wow fadeInUp"><div></div></div>
+                                </div>
+
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">69. Μοσχαρίσιο συκώτι - 23,20€</a></div></div><p>«αλά Mythos», με συνοδευτικό και σαλάτα</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">70. Μουσακάς - 20,50€</a></div></div><p>μελιτζάνες, πατάτες και κιμάς με τυρί στο φούρνο, σαλάτα</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">72. Κότσι αρνιού - 23,00€</a></div></div><p>με φρέσκα μυρωδικά, συνοδευτικό και σαλάτα</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">74. Φιλέτο αρνιού - 35,00€</a></div></div><p>σε σάλτσα κρέμας με κόκκινο κρασί, μανιτάρια, συνοδευτικό & σαλάτα</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">75. Χοιρινό φιλέτο - 25,90€</a></div></div><p>σε σάλτσα κρέμας με Metaxa, μανιτάρια, συνοδευτικό & σαλάτα</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-menu3-wrap style-1">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="menu-wrap left image-before">
+                                <div class="heading-section text-center">
+                                    <div class="main wow fadeInUp">Φιλέτα & Μπριζόλες στη Σχάρα <br> με συνοδευτικό & σαλάτα</div>
+                                    <div class="divider wow fadeInUp"><div></div></div>
+                                </div>
+
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">40. Χοιρινό μπριζολάκι - 19,00€</a></div></div><p>με σάλτσα πιπεριού και σάλτσα μανιταριών</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">52. Rumpsteak - 32,20€</a></div></div><p>με φρέσκα τηγανητά μανιτάρια και κρεμμύδια</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">53. Φιλέτο αρνιού - 35,90€</a></div></div><p>με φρέσκα μυρωδικά και μανιτάρια τηγανισμένα σε λάδι σκόρδου</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">54. Μοσχαρίσιο φιλέτο - 39,50€</a></div></div><p>με σάλτσα τρούφας</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">56. Μοσχαρίσιο φιλέτο - 38,90€</a></div></div><p>με σάλτσα μανιταριών</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">57. Μπριζόλα πιπεριού - 31,00€</a></div></div><p>Rumpsteak με καυτερή σάλτσα πιπεριού</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">58. Μπριζόλα με μανιτάρια - 31,00€</a></div></div><p>Rumpsteak με τηγανητά μανιτάρια, κρέμα γάλακτος</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">61. Χοιρινό φιλέτο - 24,00€</a></div></div><p>με πικάντικη σάλτσα Προβηγκίας</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">62. Χοιρινό φιλέτο - 24,00€</a></div></div><p>με σάλτσα γκοργκοντζόλα</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">63. Φιλέτο στήθος κοτόπουλου - 20,50€</a></div></div><p>με σάλτσα Béarnaise</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">64. Φιλέτο στήθος κοτόπουλου - 23,00€</a></div></div><p>με σπανάκι και μοτσαρέλα στο φούρνο</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">65. Φιλέτο στήθος κοτόπουλου "Hawaii" - 23,00€</a></div></div><p>με ανανά, σάλτσα κρέμας, τυρί στο φούρνο</p></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="menu-wrap right">
+                                <div class="heading-section text-center">
+                                    <div class="main wow fadeInUp">Κρεατικά στη Σχάρα</div>
+                                    <div class="divider wow fadeInUp"><div></div></div>
+                                </div>
+
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">76. Πιάτο σχάρας Èna - 21,90€</a></div></div><p>μοσχαρίσιο συκώτι & γύρος με πατάτες, ρύζι, σαλάτα & τζατζίκι</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">77. Πιάτο σχάρας Dio - 23,30€</a></div></div><p>γύρος, μπιφτέκι, φιλέτο στήθος κοτόπουλου, πικάντικη σάλτσα με πατάτες, ρύζι, σαλάτα & τζατζίκι</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">79. Αρνίσια παϊδάκια σχάρας - 25,00€</a></div></div><p>με συνοδευτικό και σαλάτα</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">80. Γύρος - 18,90€</a></div></div><p>με πατάτες, ρύζι, σαλάτα & τζατζίκι</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">81. Τηγανάκι γύρου - 19,90€</a></div></div><p>σε σάλτσα κρέμας με πατάτες, ρύζι, σαλάτα & τζατζίκι</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">82. Γύρος ογκρατέν - 21,50€</a></div></div><p>σε σάλτσα κρέμας με τυρί στο φούρνο, πατάτες, ρύζι & σαλάτα</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">83. Σουβλάκι - 19,20€</a></div></div><p>με πατάτες, ρύζι & σαλάτα</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">84. Μπιφτέκι - 20,50€</a></div></div><p>γεμιστό με τυρί, σάλτσα Προβηγκίας, πατάτες, ρύζι & σαλάτα</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">85. Rack αρνιού - 35,50€</a></div></div><p>σε φέτες με συνοδευτικό & σαλάτα</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">86. Πιάτο Helena - 20,50€</a></div></div><p>γύρος, σουβλάκι, πατάτες, ρύζι, σαλάτα & τζατζίκι</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">87. Πιάτο φιλέτου - 23,00€</a></div></div><p>γύρος, χοιρινό φιλέτο, αρνίσια παϊδάκια, σάλτσα Προβηγκίας, πατάτες, ρύζι, σαλάτα & τζατζίκι</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">88. Πιάτο σχάρας - 23,20€</a></div></div><p>γύρος, σουβλάκι, χοιρινή μπριζόλα, αρνίσια παϊδάκια, σάλτσα Προβηγκίας, πατάτες, ρύζι, σαλάτα & τζατζίκι</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">89. Ειδικό πιάτο - 23,90€</a></div></div><p>γύρος, μπιφτέκι γεμιστό με τυρί, σουβλάκι φιλέτου, σάλτσα Προβηγκίας, πατάτες, ρύζι, σαλάτα & τζατζίκι</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-menu3-wrap style-1">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="menu-wrap left image-before">
+                                <div class="heading-section text-center">
+                                    <div class="main wow fadeInUp">Χορτοφαγικά & Ζυμαρικά</div>
+                                    <div class="divider wow fadeInUp"><div></div></div>
+                                </div>
+
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">A11. Τηγάνι λαχανικών - 14,90€</a></div></div><p>φρέσκα εποχικά λαχανικά, σάλτσα ντομάτας-κρέμας και τυρί στο φούρνο</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">A12. Πέννες - 14,90€</a></div></div><p>με φρέσκα λαχανικά σε σάλτσα ντομάτας</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">A13. Πέννες - 16,90€</a></div></div><p>σε σάλτσα γκοργκοντζόλα με σπανάκι και τυρί στο φούρνο</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">A14. Πέννες - 16,90€</a></div></div><p>με λωρίδες στήθους κοτόπουλου σε σάλτσα τεσσάρων τυριών</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">A15. Τορτελόνι - 16,00€</a></div></div><p>με μπρόκολο σε σάλτσα Metaxa με τυρί στο φούρνο</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">A16. Vegan γύρος - 19,00€</a></div></div><p>με πατάτες, ρύζι, σαλάτα & τζατζίκι (vegan)</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">A17. Vegan τζατζίκι - 6,50€</a></div></div><p>πικάντικη κρέμα με αγγούρι, σκόρδο και φρέσκα μυρωδικά</p></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="menu-wrap right">
+                                <div class="heading-section text-center">
+                                    <div class="main wow fadeInUp">Σαλάτες</div>
+                                    <div class="divider wow fadeInUp"><div></div></div>
+                                </div>
+
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">35. Ανάμεικτη σαλάτα με κατσικίσιο τυρί - 16,90€</a></div></div><p>αβοκάντο, καρύδια & σπόρους ροδιού</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">36. Χωριάτικη σαλάτα - 14,30€</a></div></div><p>πράσινες σαλάτες, ντομάτες, αγγούρι, ελιές, πιπεριές, φέτα, κρεμμύδια, πάπρικα, dressing ξίδι-ελαιόλαδο</p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">37. Σαλάτα Glaros - 16,90€</a></div></div><p>εποχικές πράσινες σαλάτες, ντομάτες, αγγούρι, καλαμπόκι, kidney beans, αυγό, ψητό στήθος γαλοπούλας και dressing</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-menu3-wrap style-1">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="menu-wrap left image-before">
+                                <div class="heading-section text-center">
+                                    <div class="main wow fadeInUp">Συνοδευτικά & Σάλτσες</div>
+                                    <div class="divider wow fadeInUp"><div></div></div>
+                                </div>
+
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">Πατάτες τηγανητές - 4,50€</a></div></div><p></p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">Πατάτες φούρνου σε φέτες - 3,90€</a></div></div><p></p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">Κροκέτες - 4,50€</a></div></div><p></p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">Συνοδευτικά λαχανικά - 4,00€</a></div></div><p></p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">Μικρή σαλάτα - 4,20€</a></div></div><p></p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">Σάλτσα μανιταριών - 4,90€</a></div></div><p></p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">Σάλτσα Προβηγκίας - 3,90€</a></div></div><p></p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">Σάλτσα Metaxa - 4,50€</a></div></div><p></p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">Σάλτσα πιπεριού - 5,50€</a></div></div><p></p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">Σάλτσα τρούφας - 5,90€</a></div></div><p></p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">Σάλτσα Béarnaise - 4,90€</a></div></div><p></p></div>
+                                <div class="wg-menu-item"><div class="flex items-center"><div class="name"><a href="#">Μαγιονέζα ή Κέτσαπ - 0,50€</a></div></div><p></p></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="menu-wrap right">
+                                <div class="heading-section text-center">
+                                    <div class="main wow fadeInUp">Εκδηλώσεις</div>
+                                    <div class="divider wow fadeInUp"><div></div></div>
+                                </div>
+                                <div class="wg-menu-item">
+                                    <div class="flex items-center">
+                                        <div class="name">
+                                            <a href="#">
+                                                Σχεδιάζετε οικογενειακή γιορτή, πάρτι γενεθλίων ή χριστουγεννιάτικη εκδήλωση;
+                                                Χρειάζεστε catering για τον πολιτικό σας γάμο ή ένα γαμήλιο γεύμα μετά;
+                                                Επικοινωνήστε μαζί μας.
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="footer" class="footer footer-1">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="logo-footer" id="logo-footer">
+                                <a href="index.html">
+                                    <img id="logo_footer" alt="" src="assets/images/logo/logo_gold_updated.png" style="height: 50px; width: 200px;">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="footer-title">Σχετικά με εμάς</div>
+                            <p>Ένα εστιατόριο που εδώ και 20 χρόνια διευθύνεται από οικογένεια και φίλους</p>
+                            <div class="widget-social style-big">
+                                <ul class="">
+                                    <li><a href="https://de-de.facebook.com/pages/category/Greek-Restaurant/Mythos-Bocholt-1670736756489393/" class="icon-fb"></a></li>
+                                    <li><a href="https://www.tripadvisor.de/Restaurant_Review-g612421-d1041008-Reviews-Restaurant_Mythos-Bocholt_North_Rhine_Westphalia.html" class="icon-trip"></a></li>
+                                    <li><a href="https://www.instagram.com/mythos_bocholt/?hl=de" class="icon-instagram2"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="footer-title">Ώρες λειτουργίας</div>
+                            <ul class="list">
+                                <li>
+                                    <p class="tf-color">Δευτέρα:</p>
+                                    <p>Κλειστά</p>
+                                </li>
+                                <li>
+                                    <p class="tf-color">Τρίτη - Πέμπτη:</p>
+                                    <p>12:00 - 14:30 & 17:00 - 21:00</p>
+                                </li>
+                                <li>
+                                    <p class="tf-color">Παρασκευή - Σάββατο:</p>
+                                    <p>12:00 - 14:30 & 17:00 - 22:00</p>
+                                </li>
+                                <li>
+                                    <p class="tf-color">Κυριακή:</p>
+                                    <p>12:00 - 14:30 & 17:00 - 21:00</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="footer-title">Διεύθυνση</div>
+                            <ul class="list">
+                                <li>
+                                    <p class="tf-color">Τοποθεσία:</p>
+                                    <p>Markt 3, 46399 Bocholt</p>
+                                </li>
+                                <li>
+                                    <p class="tf-color">Καλέστε & Κάντε Κράτηση:</p>
+                                    <p>+49 2871 2920210</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="footer-bottom">
+                                <p>Copyright © 2023 themesflat. All Rights Reserved.</p>
+                                <ul>
+                                    <li><a href="datenschutz.html">ΠΡΟΣΤΑΣΙΑ ΔΕΔΟΜΕΝΩΝ</a></li>
+                                    <li><a href="impressum.html">ΝΟΜΙΚΕΣ ΠΛΗΡΟΦΟΡΙΕΣ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <div class="tf-mouse tf-mouse-outer"></div>
+    <div class="tf-mouse tf-mouse-inner"></div>
+
+    <div class="progress-wrap active-progress">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 286.138;"></path>
+        </svg>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/map.min.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script src="assets/js/circletype.min.js"></script>
+    <script src="assets/js/countto.js"></script>
+    <script src="assets/js/count-down.js"></script>
+    <script src="assets/js/nouislider.min.js"></script>
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
